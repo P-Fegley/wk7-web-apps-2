@@ -5,7 +5,15 @@ Rails.application.routes.draw do
   get("/bitcoins", {:controller => "bitcoins", :action => "index"})
 
   resources "companies"
+  # Note: these commented lines are examples for what the controller is doing with the resources format
   # get("/companies", {:controller => "companies", :action => "index"})
+  # new company form:
+  # get("/companies/new", {:controller => "companies", :action => "new"})
+  # insert company into database:
+  # post("/companies", {:controller => "companies", :action => "create"})
+  # details page for companies:
+  # get("/companies/:id", {:controller => "companies", :action => "show"})
+
   resources "contacts"
   # get("/contacts", {:controller => "contacts", :action => "index"})
 

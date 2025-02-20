@@ -1,9 +1,10 @@
 <h1>New Company</h1>
 
-<form action="/companies" method="post">
+<form action="/companies" method="post"> <!-- 'post' request assumes creation of data -->
   <p>
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
+    <!-- 'id' matches the 'for', 'name' labels it in params -->
   </p>
   <p>
     <label for="city">City</label>
@@ -12,4 +13,5 @@
     <input type="text" name="state" id="state">
   </p>
   <button>Submit</button>
+  <a href="/companies">Cancel</a>
 </form>
