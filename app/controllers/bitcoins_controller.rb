@@ -2,7 +2,8 @@ class BitcoinsController < ApplicationController
 
   def index
     # add backend code
-    @bitcoin = params["amount"] # 'params' accesses the query string
+    @bitcoin = params["amount"]  # 'params' accesses the query string
+      # Note that this "amount" has to match the "name" of your form in the index file
 
     # connect to the Blockchain.com Exchange Rates API
     # DON'T CHANGE THIS CODE
